@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f1f1; /* Warna pastel lembut */
+    color: #5a5a5a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    margin-top: 50px;
+    animation: fadeIn 2s ease-in;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    color: #b5838d;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+}
+
+.polaroid {
+    background: white;
+    padding: 15px 15px 30px 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: rotate(-2deg);
+    transition: all 0.3s ease;
+    max-width: 250px;
+}
+
+.polaroid:nth-child(even) {
+    transform: rotate(3deg);
+}
+
+.polaroid:hover {
+    transform: rotate(0deg) scale(1.1);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+    filter: sepia(20%);
+}
+
+.caption {
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'Dancing Script', cursive; /* Kamu bisa pakai font Google Fonts */
+    font-size: 1.2rem;
+}
+
+.music-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#playBtn {
+    background: #b5838d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
