@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Special Memories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="overlay"></div>
+    
+    <header>
+        <h1>Our Digital Scrapbook</h1>
+        <p>Setiap foto punya cerita, dan setiap lagu punya rasa.</p>
+    </header>
+
+    <main class="gallery">
+        <div class="polaroid">
+            <img src="foto1.jpg" alt="Momen 1">
+            <div class="caption">Momen indah pertama kita ✨</div>
+        </div>
+        <div class="polaroid">
+            <img src="foto2.jpg" alt="Momen 2">
+            <div class="caption">Hari paling bahagia ❤️</div>
+        </div>
+        <div class="polaroid">
+            <img src="foto3.jpg" alt="Momen 3">
+            <div class="caption">Semoga selamanya begini 🌸</div>
+        </div>
+    </main>
+
+    <div class="music-player">
+        <p id="song-title">Memutar: Lagu Favorit Kita 🎵</p>
+        <audio id="myAudio" loop>
+            <source src="lagu-romantis.mp3" type="audio/mpeg">
+            Browser kamu tidak mendukung audio.
+        </audio>
+        <button onclick="togglePlay()" id="playBtn">Play Music</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
